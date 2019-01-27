@@ -12,10 +12,10 @@ import (
 	"time"
 )
 
-var TIME_FROM = "2019-01-20 00:00:00 +0900 JST"
-var PARSE_TYPE = "EUR/GBP"
+var TIME_FROM = "2019-01-01 00:00:00 +0900 JST"
+var PARSE_TYPE = "USD/JPY" //  "USD/JPY" "EUR/GBP"
 var MAX_UNITS = "20000"
-var PIPS_MULTIPLIER = 10000.0
+var PIPS_MULTIPLIER = 100.0 //  10000.0 100.0
 
 func main(){
 
@@ -228,5 +228,3 @@ func Util_ShowTimeJST(t time.Time)(string)  {
 	//fmt.Print("Location:", tk, ":Time:", t.In(tk),"\n")
 	return fmt.Sprintln(t.In(tk))
 }
-
-
